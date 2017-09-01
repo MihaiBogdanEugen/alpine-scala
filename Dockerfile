@@ -1,5 +1,5 @@
-# Start from alpine linux 3.5.* with glibc 2.25 and oracle jdk 8u144
-FROM mbe1224/alpine-oraclejdk:3.5-2.25-8u144
+# Start from alpine linux 3.5.* with glibc 2.26 and oracle jdk 8u144
+FROM mbe1224/alpine-oraclejdk:3.5-2.26-8u144
 
 # Setup SCALA_HOME
 ENV SCALA_HOME=/usr/share/scala
