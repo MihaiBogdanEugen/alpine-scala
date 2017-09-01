@@ -6,6 +6,7 @@ ENV SCALA_HOME=/usr/share/scala
 
 # Install Scala 2.11.11
 RUN SCALA_VERSION=2.11.11 && \
+    apk add --no-cache --virtual=.build-dependencies wget ca-certificates && \
     apk add --no-cache bash && \
     cd "/tmp" && \
     wget "http://downloads.typesafe.com/scala/${SCALA_VERSION}/scala-${SCALA_VERSION}.tgz" && \
