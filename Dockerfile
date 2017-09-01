@@ -4,8 +4,8 @@ FROM mbe1224/alpine-oraclejdk:3.6-2.26-8u144
 # Setup SCALA_HOME
 ENV SCALA_HOME=/usr/share/scala
 
-# Install Scala 2.11.11
-RUN SCALA_VERSION=2.11.11 && \
+# Install Scala 2.12.3
+RUN SCALA_VERSION=2.12.3 && \
     apk add --no-cache --virtual=.build-dependencies wget ca-certificates && \
     apk add --no-cache bash && \
     cd "/tmp" && \
