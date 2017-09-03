@@ -2,22 +2,35 @@
 
 ### Supported tags and respective Dockerfile links:
 
-* [3.5-2.25-8u144-2.11.11], using Alpine Linux 3.5, glibc 2.25, Oracle JDK 8u144, and Scala 2.11.11 
-* [3.5-2.26-8u144-2.11.11], using Alpine Linux 3.5, glibc 2.26, Oracle JDK 8u144, and Scala 2.11.11 
-* [3.6-2.26-8u144-2.11.11], using Alpine Linux 3.6, glibc 2.26, Oracle JDK 8u144, and Scala 2.11.11 
-* [3.6-2.26-8u144-2.12.3], [latest], using Alpine Linux 3.6, glibc 2.26, Oracle JDK 8u144, and Scala 2.12.3 
-* [edge], using Alpine Linux Edge, glibc 2.26, Oracle JDK 8u144, and Scala 2.12.3
+* ```3.6-2.26-8u144-2.11.11``` _\([3.6-2.26-8u144-2.11.11/Dockerfile]\)_
+* ```3.6-2.26-8u144-2.12.3```, ```latest``` _\([3.6-2.26-8u144-2.12.3/Dockerfile]\)_
 
-### Usage
+#### All tag names follow the naming convention:
+
+```alpine_image_tag``` + '-' + ```glibc_version``` + '-' + ```java_version``` + '-' + ```scala_version``` 
+
+### Usage:
 
 Build the image
 ```shell
 docker build -t mbe1224/alpine-scala .
 ```
 
-   [3.5-2.25-8u144-2.11.11]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.5-2.25-8u144-2.11.11/Dockerfile>
-   [3.5-2.26-8u144-2.11.11]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.5-2.26-8u144-2.11.11/Dockerfile>
-   [3.6-2.26-8u144-2.11.11]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.6-2.26-8u144-2.11.11/Dockerfile>
-   [3.6-2.26-8u144-2.12.3]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.6-2.26-8u144-2.12.3/Dockerfile>
-   [latest]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/master/Dockerfile>
-   [edge]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/edge/Dockerfile>
+### About this image:
+
+- Alpine Linux image
+- Signed glibc-_version_-r1.apk, glibc-bin-_version_-r1.apk and glibc-i18n-_version_-r1.apk packages
+- Oracle Java SE Development Kit (JDK) addded, without MissionControl, VisualVM, JavaFX and JRE
+- Oracle Java Cryptography Extension added
+- SHA 256 sum checks for all downloads
+- JAVA\_HOME and SCALA\_HOME environment variables set up
+
+### License:
+
+* [MIT License]
+* [Oracle Binary Code License Agreement]
+
+   [3.6-2.26-8u144-2.11.11/Dockerfile]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.6-2.26-8u144-2.11.11/Dockerfile>
+   [.6-2.26-8u144-2.12.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/.6-2.26-8u144-2.12.3/Dockerfile>
+   [MIT License]: <https://raw.githubusercontent.com/MihaiBogdanEugen/alpine-scala/master/LICENSE>
+   [Oracle Binary Code License Agreement]: <https://raw.githubusercontent.com/MihaiBogdanEugen/alpine-scala/master/Oracle_Binary_Code_License_Agreement%20for%20the%20Java%20SE%20Platform_Products_and_JavaFX>
