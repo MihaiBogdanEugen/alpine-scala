@@ -6,7 +6,7 @@ ENV SCALA_HOME=/usr/share/scala
 
 # Install Scala 2.11.11
 RUN SCALA_VERSION=2.11.11 && \
-    SCALA_SHA256_SUM=2b796ab773fbedcc734ba881a6486d54180b699ade8ba7493e91912044267c8c && \
+    SCALA_SHA256_SUM=12037ca64c68468e717e950f47fc77d5ceae5e74e3bdca56f6d02fd5bfd6900b && \
     apk add --no-cache --virtual=.build-dependencies wget ca-certificates && \
     apk add --no-cache bash && \
     cd "/tmp" && \
