@@ -33,6 +33,6 @@ docker build -t mbe1224/alpine-scala .
 * [Oracle Binary Code License Agreement]
 
    [3.6-2.26-8u144-2.11.11/Dockerfile]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.6-2.26-8u144-2.11.11/Dockerfile>
-   [3.6-2.26-8u144-2.12.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/.6-2.26-8u144-2.12.3/Dockerfile>
+   [3.6-2.26-8u144-2.12.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/alpine-scala/blob/3.6-2.26-8u144-2.12.3/Dockerfile>
    [MIT License]: <https://raw.githubusercontent.com/MihaiBogdanEugen/alpine-scala/master/LICENSE>
    [Oracle Binary Code License Agreement]: <https://raw.githubusercontent.com/MihaiBogdanEugen/alpine-scala/master/Oracle_Binary_Code_License_Agreement%20for%20the%20Java%20SE%20Platform_Products_and_JavaFX>
